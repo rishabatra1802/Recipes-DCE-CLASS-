@@ -4,54 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes Menu</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(120deg, #f8fafc 0%, #ffe5ec 100%);
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-        }
-        h1 {
-            text-align: center;
-            color: #d72660;
-            margin-top: 40px;
-            font-size: 2.5rem;
-        }
-        .menu {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            margin-top: 40px;
-        }
-        .menu a {
-            display: block;
-            width: 260px;
-            padding: 18px 0;
-            background: #fff;
-            color: #d72660;
-            text-decoration: none;
-            font-size: 1.3rem;
-            font-weight: 500;
-            border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(215,38,96,0.08);
-            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-            text-align: center;
-        }
-        .menu a:hover {
-            background: #d72660;
-            color: #fff;
-            box-shadow: 0 4px 24px rgba(215,38,96,0.18);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Recipes</h1>
-    <div class="menu">
-        <a href="./menu/cheesecake.html">Cheesecake</a>
-        <a href="./menu/donut.html">Donut</a>
-        <a href="./menu/waffle.html">Waffle</a>
-    </div>
+
+<header>
+    <h1>Dessert Recipes</h1>
+</header>
+<input 
+  type="text" 
+  id="search-bar" 
+  placeholder="Search recipes..." 
+  style="padding:10px; width:80%; max-width:400px; margin: 20px auto; display:block; border-radius: 5px; border: 1px solid #ccc;"
+>
+<main>
+    <!-- This will be filled by script.js -->
+    <div id="recipes-container" class="recipes-grid"></div>
+</main>
+<!-- JS files -->
+<script src="recipes.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
