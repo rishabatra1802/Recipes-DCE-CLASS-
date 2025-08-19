@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donut</title>
+    <link rel="stylesheet" href="../style.css">
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -12,24 +13,30 @@
             padding: 0;
             min-height: 100vh;
         }
+
         h1 {
             text-align: center;
             color: #d72660;
             margin-top: 40px;
             font-size: 2.5rem;
         }
+
         h2 {
             text-align: center;
             color: #d72660;
             margin-top: 32px;
             font-size: 1.5rem;
         }
-        img {
+
+        .recipe-img {
             display: block;
             margin: 0 auto 24px auto;
+            max-width: 400px;
+            width: 90%;
             border-radius: 16px;
             box-shadow: 0 2px 16px rgba(215,38,96,0.10);
         }
+
         ul, ol {
             max-width: 500px;
             margin: 0 auto 24px auto;
@@ -39,19 +46,23 @@
             padding: 20px 32px;
             font-size: 1.1rem;
         }
+
         li {
             margin-bottom: 10px;
         }
+
         p {
             max-width: 600px;
             margin: 0 auto 18px auto;
             font-size: 1.15rem;
             color: #333;
+            padding: 0 15px;
         }
-        a {
+
+        .back-btn {
             display: block;
-            width: 120px;
-            margin: 32px auto 0 auto;
+            width: 140px;
+            margin: 32px auto 40px auto;
             padding: 12px 0;
             background: #d72660;
             color: #fff;
@@ -62,7 +73,8 @@
             box-shadow: 0 2px 8px rgba(215,38,96,0.10);
             transition: background 0.2s, color 0.2s;
         }
-        a:hover {
+
+        .back-btn:hover {
             background: #fff;
             color: #d72660;
             border: 1px solid #d72660;
@@ -71,9 +83,11 @@
 </head>
 <body>
     <h1>Donut</h1>
-    <img src="https://imgs.search.brave.com/5ZV-kU6hYH_Zfd15xr0pvcEbo5XTjpMPQdnym5phgp0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzMyLzk0Lzgw/LzM2MF9GXzMzMjk0/ODAwMl9DTTVwUmVo/dTI3NjE3RmZGVDlw/bDB6eTNTZWJMUXBU/VC5qcGc" alt="Donut" style="max-width:400px;display:block;margin-bottom:16px;">
+    <img src="https://imgs.search.brave.com/5ZV-kU6hYH_Zfd15xr0pvcEbo5XTjpMPQdnym5phgp0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzMyLzk0Lzgw/LzM2MF9GXzMzMjk0/ODAwMl9DTTVwUmVo/dTI3NjE3RmZGVDlw/bDB6eTNTZWJMUXBU/VC5qcGc" alt="Donut" class="recipe-img">
+
     <p>Donuts are a beloved sweet treat, known for their soft, fluffy texture and delicious glaze or toppings. They are perfect for breakfast, dessert, or a snack any time of day.</p>
     <p>Whether baked or fried, donuts can be enjoyed plain or filled with cream, jam, or chocolate. Their versatility and irresistible taste make them a favorite for all ages.</p>
+
     <h2>Ingredients</h2>
     <ul>
         <li>2 cups all-purpose flour</li>
@@ -86,6 +100,7 @@
         <li>1 teaspoon vanilla extract</li>
         <li>Oil for frying</li>
     </ul>
+
     <h2>Steps</h2>
     <ol>
         <li>In a bowl, mix flour, sugar, baking powder, and salt.</li>
@@ -96,6 +111,7 @@
         <li>Fry donuts in batches until golden brown, about 1-2 minutes per side. Drain on paper towels.</li>
         <li>Let cool slightly, then glaze or dust with sugar as desired. Enjoy!</li>
     </ol>
-    <a href="../index.html">Home</a>
+
+    <a href="../index.html" class="back-btn">← Back to Menu</a>
 </body>
 </html>
