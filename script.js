@@ -30,3 +30,8 @@ document.getElementById('search-bar').addEventListener('input', function(e) {
     });
 });
 
+card.innerHTML = `
+  <img src="${recipe.image}" alt="${recipe.title}">
+  <h2>${recipe.title}</h2>
+  <a href="${recipe.link}" class="view-btn">View Recipe</a>
+`;

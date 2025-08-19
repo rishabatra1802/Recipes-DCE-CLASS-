@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes Menu</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-    <h1>Dessert Recipes</h1>
+<header style="display:flex; align-items:center; justify-content:center; gap:15px; margin-top:20px;">
+    <img src="data:image/jpeg;base64,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" 
+         alt="Logo" style="height:100px; width:100px; border-radius:50%;">
+    <h1 style="font-family:'Lobster', cursive; font-size:2.5rem; color:#ff4081;">Sweet Treats</h1>
 </header>
 <input 
   type="text" 
@@ -17,6 +19,12 @@
   placeholder="Search recipes..." 
   style="padding:10px; width:80%; max-width:400px; margin: 20px auto; display:block; border-radius: 5px; border: 1px solid #ccc;"
 >
+<div class="recipes-wrapper">
+    <div id="recipes-container">
+        <!-- cards -->
+    </div>
+</div>
+
 <main>
     <!-- This will be filled by script.js -->
     <div id="recipes-container" class="recipes-grid"></div>
